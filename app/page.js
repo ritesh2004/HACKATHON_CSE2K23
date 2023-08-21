@@ -5,6 +5,7 @@ import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
 import Authcontext from "@/context/authcontext";
+import Image from "next/image";
 
 export default function Home() {
 
@@ -26,7 +27,7 @@ a <span className="text-blue-700">Differenece.</span>
       </div>
     </div>
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"/>
+      <Image width={720} height={600} class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"/>
     </div>
   </div>
   </section>
