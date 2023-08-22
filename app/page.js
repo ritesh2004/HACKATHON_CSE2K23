@@ -4,7 +4,7 @@ import Diversity1Icon from '@mui/icons-material/Diversity1';
 import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
-import Authcontext from "@/context/authcontext";
+import Authcontext from "@/context/Authcontext";
 import Image from "next/image";
 
 export default function Home() {
@@ -69,7 +69,7 @@ a <span className="text-blue-700">Differenece.</span>
           </svg> */}
           <CurrencyRupeeIcon style={{height:'50px',width:'50px',color:'blue'}}/>
           <h2 class="title-font font-medium text-3xl text-gray-900">74</h2>
-          <p class="leading-relaxed">Amount Donated</p>
+          <p class="leading-relaxed">Donated</p>
         </div>
       </div>
       <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
