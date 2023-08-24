@@ -3,6 +3,7 @@ import Headers from './Headers'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { Authprovider } from '@/context/Authcontext'
+import { AppcontextProvider } from '@/context/Appcontext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,6 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    <AppcontextProvider>
     <Authprovider>
       <body className={inter.className}>
       <Headers/>
@@ -23,6 +25,7 @@ export default function RootLayout({ children }) {
       <Footer/>
       </body>
       </Authprovider>
+      </AppcontextProvider>
     </html>
   )
 }

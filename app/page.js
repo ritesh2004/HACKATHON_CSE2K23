@@ -6,6 +6,7 @@ import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
 import Authcontext from "@/context/Authcontext";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -20,10 +21,10 @@ a <span className="text-blue-700">Differenece.</span>
       </h1>
       <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
       <div class="flex justify-center">
-      <a href="/donation">
-        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Donate Now ❤️</button></a>
-        <a href="/fundraise">
-        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Raise For Fund</button></a>
+      <Link href="/donation">
+        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Donate Now ❤️</button></Link>
+        <Link href="/fundraise">
+        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Raise For Fund</button></Link>
       </div>
     </div>
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

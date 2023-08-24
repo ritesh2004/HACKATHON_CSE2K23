@@ -1,7 +1,11 @@
-import React from 'react'
+"use client"
+import React, { useContext } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+import Appcontext from '@/context/Appcontext'
 
 function page() {
+    let { arr } = useContext(Appcontext);
     return (
         <div>
             <section class="text-gray-600 body-font">
@@ -17,21 +21,35 @@ function page() {
                         <div class="container px-5 py-24 mx-auto">
                             <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
                                 <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900">Raise For Help</h1>
-                                <a href='/fundraise'>
+                                <Link href='/fundraise'>
                                     <button class="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0">Raise Fund</button>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </section>
                     <div class="flex flex-wrap -m-4">
-                        <div class="xl:w-1/4 md:w-1/2 p-4">
-                            <div class="p-6 rounded-2xl shadow-2xl">
-                                <Image width={720} height={400} class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content" />
-                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
-                                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                            </div>
-                        </div>
+                        {arr?.map((data) => {
+                            let raised_percent = ((data?.raised / data?.amount)*100).toFixed(2) + "%"
+                            return (<div class="xl:w-1/4 md:w-1/2 p-4">
+                                <div class="p-6 rounded-2xl shadow-2xl">
+                                    <Image width={720} height={400} class="h-40 rounded w-full object-cover object-center mb-6" src={data?.image_url} alt="content" />
+                                    {data?.urgent && <h3 class="tracking-widest text-red-500 text-xs font-medium title-font">URGENT</h3>}
+                                    <h2 class="text-xl capitalize text-gray-900 font-bold title-font mb-2">{data?.heading}</h2>
+                                    <p class="leading-relaxed text-base text-center">{data?.name}</p>
+
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-base font-medium text-green-700 dark:text-white">Raised</span>
+                                        <span class="text-sm font-medium text-green-700 dark:text-white">{raised_percent}</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mb-4">
+                                        <div class="bg-green-600 h-2.5 rounded-full" style={{width:raised_percent}}></div>
+                                    </div>
+
+                                    <button type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Donate</button>
+
+                                </div>
+                            </div>)
+                        })}
                     </div>
                 </div>
             </section>
