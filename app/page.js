@@ -22,7 +22,7 @@ export default function Home() {
               a <span className="text-blue-700">Differenece.</span>
               {/* <br class="hidden lg:inline-block">readymade gluten/</br> */}
             </h1>
-            <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+            <p class="mb-8 leading-relaxed">We should never get tired of doing little things for others, sometimes those little things occupy the best parts of their hearts. When one gives two gets happy and that is how the world gets going. Let us cherish each moment of our living but just donating a penny and be the part of the change we want to see.</p>
             <div class="flex justify-center">
               <Link href="/donation">
                 <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Donate Now ❤️</button></Link>
@@ -38,8 +38,8 @@ export default function Home() {
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Essential Information</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">This part contains all important points a person donating should know before giving their money to our fundraising organization.</p>
           </div>
           <div class="flex flex-wrap -m-4 text-center">
             <div class="p-4 md:w-1/3 sm:w-1/2 w-full">

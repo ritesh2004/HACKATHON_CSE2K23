@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './images/global.png'
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Footer() {
   return (
@@ -16,24 +17,36 @@ function Footer() {
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Pages</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                      <li class="mb-4">
-                          <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                      <li className='mb-2'>
+                          <Link href="/" class="hover:underline">Home</Link>
+                      </li>
+                      <li className='mb-2'>
+                          <Link href="/about" class="hover:underline">About</Link>
+                      </li>
+                      <li className='mb-2'>
+                          <Link href="/donation" class="hover:underline">Donation</Link>
                       </li>
                       <li>
-                          <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                          <Link href="/contact" class="hover:underline">Contact</Link>
                       </li>
                   </ul>
               </div>
               <div>
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                      <li class="mb-4">
-                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                      <li class="mb-2">
+                          <a href="#" class="hover:underline ">Github</a>
+                      </li>
+                      <li class="mb-2">
+                          <a href="#" class="hover:underline">Facebook</a>
+                      </li>
+                      <li class="mb-2">
+                          <a href="#" class="hover:underline">Instagram</a>
                       </li>
                       <li>
-                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                          <a href="#" class="hover:underline">LinkedIn</a>
                       </li>
                   </ul>
               </div>
@@ -52,7 +65,7 @@ function Footer() {
       </div>
       <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">PhilanthroWave™</a>. All Rights Reserved.
           </span>
           <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
               <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
