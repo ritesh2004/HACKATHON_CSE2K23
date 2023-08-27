@@ -134,7 +134,7 @@ const AppcontextProvider = ({children})=>{
     useEffect(()=>{
         getRows()
         // console.log(row)
-    })
+    },[])
 
     const postFeedback = async (e) =>{
         e.preventDefault()

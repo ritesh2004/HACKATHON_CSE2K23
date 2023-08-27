@@ -12,7 +12,7 @@ const Page = ({ params }) => {
     // console.log(params?.story)
     return (
         <section class="text-gray-600 body-font">
-            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col">
                 <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
                     <Image class="object-cover object-center rounded" alt="hero" src={row[0]?.image_url} width={400} height={350}/>
                 </div>
@@ -23,6 +23,12 @@ const Page = ({ params }) => {
                     <p class="mb-8 leading-relaxed">
                         {row[0]?.reason}
                     </p>
+                    <p class="mb-8 leading-relaxed text-green-700 font-extrabold">
+                       Raised: {row[0]?.amount} /-
+                    </p>
+                    {row[0]?.urgent&&<p class="mb-8 leading-relaxed text-red-700 font-extrabold">
+                       URGENT
+                    </p>}
                     <p class="mb-8 leading-relaxed font-extrabold">
                        Address: {row[0]?.address}
                     </p>
