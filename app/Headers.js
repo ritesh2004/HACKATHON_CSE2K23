@@ -21,7 +21,7 @@ function Header() {
         <div class="flex md:order-2">
           {!userInfo?.email ? <div>
             <Link href='/signin'>
-              <button type="button" class="text-black border-cyan-500 outline-cyan-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mx-2">Sign in</button>
+              <button type="button" class="border-cyan-500 outline-cyan-500 hover:text-white-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mx-2">Sign in</button>
             </Link>
             <Link href='/signup'>
               <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mx-2">Sign up</button>

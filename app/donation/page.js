@@ -93,8 +93,8 @@ function Page() {
                         {arr?.map((data,id) => {
                             let raised_percent = ((data?.raised / data?.amount) * 100).toFixed(2) + "%"
                             return (<div class="xl:w-1/4 md:w-1/2 p-4" key={id}>
-                                <div class="p-6 rounded-2xl shadow-2xl">
-                                    <Image width={720} height={400} class="h-40 rounded w-full object-cover object-center mb-6" src={data?.image_url} alt="content" />
+                                <div class="p-6 rounded-2xl shadow-2xl w-80 xl:w-full">
+                                    <Image width={50} height={60} class="h-40 rounded w-full object-contain object-center mb-6" src={data?.image_url} alt="content" />
                                     {data?.urgent && <h3 class="tracking-widest text-red-500 text-xs font-medium title-font">URGENT</h3>}
                                     <h2 class="text-xl capitalize text-gray-900 font-bold title-font mb-2 cursor-pointer" onClick={() => router.push(`/${data?.id}`)}>{data?.heading}</h2>
                                     <p class="leading-relaxed text-base text-center">{data?.name}</p>
