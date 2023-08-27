@@ -2,8 +2,8 @@ import Footer from './Footer'
 import Headers from './Headers'
 import './globals.css'
 import { Inter } from 'next/font/google'
-import { Authprovider } from '@/context/Authcontext'
-import { AppcontextProvider } from '@/context/Appcontext'
+import { Authprovider } from '@/app/context/Authcontext'
+import { AppcontextProvider } from '@/app/context/Appcontext'
 
 const inter = Inter({ subsets: ['latin'] })
 

@@ -4,10 +4,10 @@ import Diversity1Icon from '@mui/icons-material/Diversity1';
 import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
-import Authcontext from "@/context/Authcontext";
+import Authcontext from "@/app/context/Authcontext";
 import Image from "next/image";
 import Link from "next/link";
-import Appcontext from "@/context/Appcontext";
+import Appcontext from "@/app/context/Appcontext";
 import cover from '../public/cover.jpg'
 
 export default function Home() {

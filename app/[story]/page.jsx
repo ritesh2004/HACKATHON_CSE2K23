@@ -1,5 +1,5 @@
 "use client"
-import Appcontext from '@/context/Appcontext'
+import Appcontext from '@/app/context/Appcontext'
 import Image from 'next/image'
 import React, { useContext, useEffect } from 'react'
 

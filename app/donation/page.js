@@ -2,7 +2,7 @@
 import React, { useContext, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import Appcontext from '@/context/Appcontext'
+import Appcontext from '@/app/context/Appcontext'
 import LargeModal from '@/components/LargeModal'
 import { useRouter } from 'next/navigation'
 // const Razorpay = require('razorpay');

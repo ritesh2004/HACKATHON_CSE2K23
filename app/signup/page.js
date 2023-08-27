@@ -1,5 +1,5 @@
 "use client"
-import Authcontext from '@/context/Authcontext';
+import Authcontext from '@/app/context/Authcontext';
 import React, { useContext, useState } from 'react'
 
 function Page() {

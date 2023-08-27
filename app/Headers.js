@@ -2,7 +2,7 @@
 import React, { useContext, useState } from 'react'
 import Image from 'next/image'
 import logo from './images/global.png'
-import Authcontext from '@/context/Authcontext'
+import Authcontext from './context/Authcontext'
 import Link from 'next/link'
 
 
