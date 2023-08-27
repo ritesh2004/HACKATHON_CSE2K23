@@ -16,6 +16,10 @@ const AppcontextProvider = ({children})=>{
     const [image,setImage] = useState();
     const [loading,setLoading] = useState(false);
     const [arr,setArr] = useState([]);
+    const [donated,setDonated] = useState()
+    const [applicants,setApplicants] = useState()
+    const [row,setRow] = useState({})
+    const [sent,setSent] = useState(false)
     // console.log(image)
     const time = new Date().getTime()
     // console.log(time)
@@ -70,19 +74,97 @@ const AppcontextProvider = ({children})=>{
         .from('raiser')
         .select('*')
         setArr(raiser)
-        console.log(raiser)
+        // console.log(raiser)
+        setApplicants(raiser?.length)
     }
+
+    const getRow = async (id) =>{
+        // console.log(id)
+        let {data: raiser,error} = await supabase
+        .from('raiser')
+        .select('*')
+        .eq('id',id)
+
+        setRow(raiser)
+        // console.log(raiser)
+    }
+
+    const getData = async (id) =>{
+        let { data: raiser, error } = await supabase
+        .from('raiser')
+        .select('raised')
+        .eq('id',id)
+
+        console.log(raiser[0]?.raised)
+
+        return Number(raiser[0]?.raised)
+    }
+
+    const updateRow = async (id,raised) =>{
+        let preVal = await getData(id);
+        console.log("Previous",preVal)
+        console.log('Donated',raised)
+        console.log("Total",Number(preVal)+Number(raised))
+        const { data, error } = await supabase
+        .from('raiser')
+        .update({ raised: Number(preVal)+Number(raised)})
+        .eq('id', id)
+        .select()
+
+    }
+
+    const getTotal = async () =>{
+        const {data:raiser,error} = await supabase
+        .from('raiser')
+        .select('raised')
+        let total = 0;
+        // console.log(raiser)
+        raiser?.forEach(subTotal => {
+            // console.log(subTotal)
+            return (
+                total += Number(subTotal?.raised)
+            )
+        })
+
+        setDonated(total)
+    }
+
+    getTotal()
 
     useEffect(()=>{
         getRows()
-    },[])
+        // console.log(row)
+    })
+
+    const postFeedback = async (e) =>{
+        e.preventDefault()
+        setSent(false)
+        const { data, error } = await supabase
+        .from('user_feedback')
+        .insert([
+        { email: e.target.email.value, feedback: e.target.feedback.value },
+        ])
+        .select()
+        if (!error) {
+            setSent(true)
+            alert("Successfully submitted")
+        }
+    }
+
 
     let values = {
         setFormData:setFormData,
         uploadForm:uploadForm,
         setImage:setImage,
         loading:loading,
-        arr:arr
+        arr:arr,
+        updateRow:updateRow,
+        donated:donated,
+        applicants:applicants,
+        getRow:getRow,
+        row:row,
+        postFeedback:postFeedback,
+        sent:sent
     }
     return(
         <Appcontext.Provider value={values}>
