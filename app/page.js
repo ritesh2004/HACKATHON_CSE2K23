@@ -8,6 +8,7 @@ import Authcontext from "@/context/Authcontext";
 import Image from "next/image";
 import Link from "next/link";
 import Appcontext from "@/context/Appcontext";
+import cover from '../public/cover.jpg'
 
 export default function Home() {
 
@@ -31,7 +32,7 @@ export default function Home() {
             </div>
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <Image width={720} height={600} class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" />
+            <Image width={720} height={600} class="object-cover object-center rounded" alt="hero" src={cover} />
           </div>
         </div>
       </section>
