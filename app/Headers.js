@@ -15,7 +15,7 @@ function Header() {
     <nav class="bg-white dark:bg-gray-900 w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" class="flex items-center">
-          <Image width={50} src={logo} class="h-8 mr-3 border-xl" />
+          <Image width={50} height={50} src={logo} alt='logo' class="h-8 mr-3 border-xl" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">PhilanthroWave</span>
         </Link>
         <div class="flex md:order-2">

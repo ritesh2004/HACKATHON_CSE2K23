@@ -7,7 +7,7 @@ import LargeModal from '@/components/LargeModal'
 import { useRouter } from 'next/navigation'
 // const Razorpay = require('razorpay');
 
-function page() {
+function Page() {
     let { arr, updateRow } = useContext(Appcontext);
     const [amount, setAmount] = useState("100");
     const [open, setOpen] = useState(false);
@@ -90,9 +90,9 @@ function page() {
                         </div>
                     </section>
                     <div class="flex flex-wrap -m-4">
-                        {arr?.map((data) => {
+                        {arr?.map((data,id) => {
                             let raised_percent = ((data?.raised / data?.amount) * 100).toFixed(2) + "%"
-                            return (<div class="xl:w-1/4 md:w-1/2 p-4">
+                            return (<div class="xl:w-1/4 md:w-1/2 p-4" key={id}>
                                 <div class="p-6 rounded-2xl shadow-2xl">
                                     <Image width={720} height={400} class="h-40 rounded w-full object-cover object-center mb-6" src={data?.image_url} alt="content" />
                                     {data?.urgent && <h3 class="tracking-widest text-red-500 text-xs font-medium title-font">URGENT</h3>}
@@ -140,4 +140,4 @@ function page() {
     )
 }
 
-export default page
+export default Page

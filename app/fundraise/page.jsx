@@ -4,7 +4,7 @@ import React, { useContext, useState } from 'react';
 
 
 
-function page() {
+function Page() {
     let {setFormData,uploadForm,setImage,loading} = useContext(Appcontext);
     const [step, setStep] = useState(0);
     const [form,setForm] = useState({
@@ -161,4 +161,4 @@ function page() {
     )
 }
 
-export default page
+export default Page

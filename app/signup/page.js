@@ -2,7 +2,7 @@
 import Authcontext from '@/context/Authcontext';
 import React, { useContext, useState } from 'react'
 
-function page() {
+function Page() {
     let { signUp, loading, sent, err,setSent } = useContext(Authcontext);
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
@@ -56,4 +56,4 @@ function page() {
     )
 }
 
-export default page
+export default Page

@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-function page() {
+function Page() {
     return (
         <div>
             <section class="text-gray-600 body-font">
@@ -190,4 +190,4 @@ function page() {
     )
 }
 
-export default page
+export default Page
