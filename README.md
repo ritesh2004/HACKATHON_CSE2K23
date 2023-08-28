@@ -14,7 +14,7 @@
 
 https://github.com/ritesh2004/HACKATHON_CSE2K23/assets/109234507/db0172ce-c1e0-4024-bd1f-8efc7b098d0a
 
-# Inspiration
+## 🚀Inspiration
 
 
 
@@ -24,7 +24,12 @@ https://github.com/ritesh2004/HACKATHON_CSE2K23/assets/109234507/db0172ce-c1e0-4
 
 
 
-
+## 👨‍💻Problem solved by this project
+- <b>Financial Shortfalls:</b>Our website shall help individuals,or some organisations.This could be medical,educational expenses,operational costs for non profit.
+- <b>Charitable Causes:</b>The website is dedicated to raising funds for charitable causes, such as disaster relief, poverty alleviation, healthcare initiatives, and education programs.
+- <b>Nonprofit Sustainability:</b>Our website is non profitable.Organizers of events, conferences, or festivals can use fundraising websites to gather funds for event planning, promotion, and logistics to expand the impact.
+- <b>Research and Innovation:</b>Scientists and researchers may seek funding for their research projects,and our website is easily helpful for the nations purpose.
+- Apart to this many problems are solved by our website.This is very easy to use.
 
 ## 🛠️Tech Stack
 
@@ -52,7 +57,7 @@ https://github.com/ritesh2004/HACKATHON_CSE2K23/assets/109234507/db0172ce-c1e0-4
 - User can log out after their requirement fullfilled
 
 
-## Getting Started
+## 🧭Getting Started
 <b>To run the project in your system you have to follow steps given bellow:</b>
 <br/>
 ### Prerequisites
