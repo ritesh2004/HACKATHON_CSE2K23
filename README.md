@@ -113,8 +113,48 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🌊Contributors
+<div>
+<h1 align="center">
+ <b>Made with ❤️ by team TROUBLESHOOTER
+<h1>
+</div>
+Meet the awesome people who have contributed to this project:
 
-## Learn More
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/ritesh2004">
+        <img src="https://github.com/ritesh2004.png" width="100px;" alt=""style="border-radius:50%"/>
+        <br />
+        <sub><b>Ritesh Pramanik[Lead]</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Shouvik2">
+        <img src="https://github.com/Shouvik2.png" width="100px;" alt=""style="border-radius:50%"/>
+        <br />
+        <sub><b>Shouvik Pramanik</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/moh-15">
+        <img src="https://github.com/moh-15.png" width="100px;" alt=""style="border-radius:50%"/>
+        <br />
+        <sub><b>Mohana Mukhopadhyay</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/parthiv2406">
+        <img src="https://github.com/parthiv2406.png" width="100px;" alt=""style="border-radius:50%"/>
+        <br />
+        <sub><b>Parthiv Das mandal</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+## 🔰Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -122,5 +162,6 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
 
 ## Happy Hacking, Happy Coding
