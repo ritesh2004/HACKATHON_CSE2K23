@@ -2,6 +2,9 @@
 <div align="center">
   <img src="https://github.com/ritesh2004/HACKATHON_CSE2K23/assets/109234507/526ac086-5597-4cdb-8bea-081a7ec34d95" alt="Logo" width="120" height="120"/>
   <h2>PhilanthroWave(A FundRaising Website)</h2>
+  <p align="center">
+    Use this readme for getting stared with this project
+  </p>
 </div>
 
 
