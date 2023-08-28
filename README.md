@@ -125,28 +125,28 @@ Meet the awesome people who have contributed to this project:
   <tr>
     <td align="center">
       <a href="https://github.com/ritesh2004">
-        <img src="https://github.com/ritesh2004.png" width="100px;" alt=""style="border-radius:50%"/>
+        <img src="https://github.com/ritesh2004.png" width="100px;" alt="ritesh2004" style="border-radius:50%"/>
         <br />
         <sub><b>Ritesh Pramanik[Lead]</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/Shouvik2">
-        <img src="https://github.com/Shouvik2.png" width="100px;" alt=""style="border-radius:50%"/>
+        <img src="https://github.com/Shouvik2.png" width="100px;" alt="Shouvik2" style="border-radius:50%"/>
         <br />
         <sub><b>Shouvik Pramanik</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/moh-15">
-        <img src="https://github.com/moh-15.png" width="100px;" alt=""style="border-radius:50%"/>
+        <img src="https://github.com/moh-15.png" width="100px;" alt="moh-15" style="border-radius:50%"/>
         <br />
         <sub><b>Mohana Mukhopadhyay</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/parthiv2406">
-        <img src="https://github.com/parthiv2406.png" width="100px;" alt=""style="border-radius:50%"/>
+        <img src="https://github.com/parthiv2406.png" width="100px;" alt="parthiv2406" style="border-radius:50%"/>
         <br />
         <sub><b>Parthiv Das mandal</b></sub>
       </a>
