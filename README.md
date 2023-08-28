@@ -4,7 +4,7 @@
   <h2>PhilanthroWave(A FundRaising Website)</h2>
   <h3>Our Dashing website is now live</h3>
   <p>Click the following link to visit Philanthrowave Website:</p>
-    <a href="https://hackathon-cse-2-k23-git-main-ritesh2004.vercel.app/">Visit Hackathon-Cse-2-k23-git-main-ritesh2004.vercel.app</a>
+    <a href="https://hackathon-cse-2-k23-git-main-ritesh2004.vercel.app/">Visit Website</a>
   <p align="center">
     Use this readme for getting stared with this project
   </p>
@@ -98,7 +98,7 @@ https://github.com/ritesh2004/HACKATHON_CSE2K23/assets/109234507/db0172ce-c1e0-4
   ```
 2. Install node module packages
    ```sh
-   npm i
+   npm install
    ```
 3. Run the development server
   ```sh
