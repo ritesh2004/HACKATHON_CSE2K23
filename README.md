@@ -14,16 +14,10 @@
 
 
 
-
-
-## 🎞️Demo
-
-https://github.com/ritesh2004/HACKATHON_CSE2K23/assets/109234507/db0172ce-c1e0-4024-bd1f-8efc7b098d0a
-<details>
-  <summary>Table of Contents</summary>
+<summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">Demo</a>
     </li>
     <li>
       <a href="#inspiration">Inspiration</a>
@@ -40,6 +34,11 @@ https://github.com/ritesh2004/HACKATHON_CSE2K23/assets/109234507/db0172ce-c1e0-4
     <li><a href="#learn-more">Learn More</a></li>
   </ol>
 </details>
+
+## 🎞️Demo
+
+https://github.com/ritesh2004/HACKATHON_CSE2K23/assets/109234507/db0172ce-c1e0-4024-bd1f-8efc7b098d0a
+<details>
 
 ## 🚀Inspiration
 
@@ -60,13 +59,13 @@ https://github.com/ritesh2004/HACKATHON_CSE2K23/assets/109234507/db0172ce-c1e0-4
 
 ## 🛠️Tech Stack
 
-**Client:** Next, TailwindCSS, Material UI
+- <img src = "https://camo.githubusercontent.com/f21f1fa29dfe5e1%E2%80%A69636f6e5f6c696768745f6261636b67726f756e642e706e67" height=30px width=30px > **Next.js** - for building the frontend  <br> 
+- <img src = "https://avatars.githubusercontent.com/u/67109815?s=48&v=4" height=30px width=30px>**Tailwind CSS** - For UI component <br>
+  - **Material UI**- For UI ICON <br>
+- <img src = "https://supabase.com/_next/image?url=%2F_next%2Fst…abase-logo-wordmark--dark.b36ebb5f.png&w=128&q=75" height=40px width=40px> **Supabase**- for Backend Service <br>
+- **NPM** - Node Package manager<br>
+- <img src = "https://avatars.githubusercontent.com/u/14985020?s=48&v=4" height=40px width=40px> **Vercel**- For Project Deployment<br>
 
-**Server:** Supabase
-
-**Payment Gateway:** Razorpay
-
-**Deployed On:** Vercel
 
 
 ## 🙌 Overview
@@ -82,8 +81,18 @@ https://github.com/ritesh2004/HACKATHON_CSE2K23/assets/109234507/db0172ce-c1e0-4
 - Then user can see a progress bar which notify how much amount is raised.
 - Donor can also see details about the applicants the just have to click the card.
 - User can log out after their requirement fullfilled
-
-
+## ⏭Roadmap
+- [x] landing page
+- [x] Website Stats
+- [x] Authentication System with Supabase
+- [x] About Page
+- [x] Donation Page
+- [x] Contact Page
+- [x] Intigrate filecoin
+- [x] Fund raise form page
+- [x] Add Supabase Backend for storing Applications
+- [x] Implementing RAZORPAY Payment Gateway
+- [x] Deploy on VERCEL
 ## 🧭Getting Started
 <b>To run the project in your system you have to follow steps given bellow:</b>
 <br/>
