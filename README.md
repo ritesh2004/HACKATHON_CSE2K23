@@ -2,6 +2,7 @@
 <div align="center">
   <img src="https://github.com/ritesh2004/HACKATHON_CSE2K23/assets/109234507/526ac086-5597-4cdb-8bea-081a7ec34d95" alt="Logo" width="120" height="120"/>
   <h2>PhilanthroWave(A FundRaising Website)</h2>
+  <h2>Track:- Project Workflow</h2>
   <h3>Our Dashing website is now live</h3>
   <p>Click the following link to visit Philanthrowave Website:</p>
     <a href="https://hackathon-cse-2-k23-git-main-ritesh2004.vercel.app/">Visit Website</a>
@@ -13,7 +14,7 @@
 
 
 
-
+<details>
 <summary>Table of Contents</summary>
   <ol>
     <li>
@@ -38,7 +39,6 @@
 ## 🎞️Demo
 
 https://github.com/ritesh2004/HACKATHON_CSE2K23/assets/109234507/db0172ce-c1e0-4024-bd1f-8efc7b098d0a
-<details>
 
 ## 🚀Inspiration
 
@@ -59,11 +59,11 @@ https://github.com/ritesh2004/HACKATHON_CSE2K23/assets/109234507/db0172ce-c1e0-4
 
 ## 🛠️Tech Stack
 
-- <img src = "https://camo.githubusercontent.com/f21f1fa29dfe5e1%E2%80%A69636f6e5f6c696768745f6261636b67726f756e642e706e67" height=30px width=30px > **Next.js** - for building the frontend  <br> 
+- <img src="https://miro.medium.com/v2/resize:fit:1000/1*YPETs_O_io9ZEM1Ew55sIQ.jpeg" height=30px width=50px > **Next.js** - for building the frontend  <br> 
 - <img src = "https://avatars.githubusercontent.com/u/67109815?s=48&v=4" height=30px width=30px>**Tailwind CSS** - For UI component <br>
-  - **Material UI**- For UI ICON <br>
-- <img src = "https://supabase.com/_next/image?url=%2F_next%2Fst…abase-logo-wordmark--dark.b36ebb5f.png&w=128&q=75" height=40px width=40px> **Supabase**- for Backend Service <br>
-- **NPM** - Node Package manager<br>
+- <img src="https://mui.com/static/logo.png" height=30px width=50px/>**Material UI**- For UI ICON <br>
+- <img src = "https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" height=40px width=40px> **Supabase**- for Backend Service <br>
+- <img src="https://logowik.com/content/uploads/images/npm-inc7007.logowik.com.webp" height=40px width=40px/>**NPM** - Node Package manager<br>
 - <img src = "https://avatars.githubusercontent.com/u/14985020?s=48&v=4" height=40px width=40px> **Vercel**- For Project Deployment<br>
 
 
