@@ -14,6 +14,17 @@
 
 https://github.com/ritesh2004/HACKATHON_CSE2K23/assets/109234507/db0172ce-c1e0-4024-bd1f-8efc7b098d0a
 
+# Inspiration
+
+
+
+- The post covid condition for the under privilaged or people below poverty line are very challenging. Looking forward after the horrific pandamic, to help these people reestablish thier livelihood with less misery.
+
+- To solve this problem we generated this fundraising website enableing monetary aid to the people in need.
+
+
+
+
 
 ## 🛠️Tech Stack
 
