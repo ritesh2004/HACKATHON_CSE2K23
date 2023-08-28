@@ -16,6 +16,29 @@
 ## 🎞️Demo
 
 https://github.com/ritesh2004/HACKATHON_CSE2K23/assets/109234507/db0172ce-c1e0-4024-bd1f-8efc7b098d0a
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <a href="#inspiration">Inspiration</a>
+      </ul>
+    </li>
+    <li>
+      <li><a href="#tech-stack">Tech Stack</a></li>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#problem-solving">Problem Solving</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#learn-more">Learn More</a></li>
+  </ol>
+</details>
 
 ## 🚀Inspiration
 
