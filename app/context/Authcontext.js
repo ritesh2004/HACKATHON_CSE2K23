@@ -56,8 +56,8 @@ const Authprovider = ({children}) =>{
                 // alert(error)
                 console.log(error)
                 // setUserInfo(data)
-                setToken(data.session.access_token)
-                localStorage.setItem("accessToken",data.session.access_token)
+                setToken(data?.session?.access_token)
+                localStorage.setItem("accessToken",data?.session?.access_token)
             }
         }catch(error){
             alert(error)
