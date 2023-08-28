@@ -1,18 +1,18 @@
 "use client"
 import Appcontext from '@/app/context/Appcontext';
 import React, { useContext, useState } from 'react';
-import Authcontext from '../context/Authcontext';
-import { useRouter } from 'next/navigation';
+// import Authcontext from '../context/Authcontext';
+// import { useRouter } from 'next/navigation';
 
 
 
 function Page() {
-    let {userInfo} = useContext(Authcontext);
-    const router = useRouter();
-    console.log(userInfo)
-    if (!userInfo?.aud) {
-        router.push('/signin')
-    }
+    // let {userInfo} = useContext(Authcontext);
+    // const router = useRouter();
+    // // console.log(userInfo)
+    // if (!userInfo?.aud) {
+    //     router.push('/signin')
+    // }
     let {setFormData,uploadForm,setImage,loading} = useContext(Appcontext);
     const [step, setStep] = useState(0);
     const [form,setForm] = useState({
