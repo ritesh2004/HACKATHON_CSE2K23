@@ -16,29 +16,25 @@
 
 <details>
 <summary>Table of Contents</summary>
-  <ol>
+  <ul>
     <li>
-      <a href="#about-the-project">Demo</a>
+      <a href="#demo">Demo</a>
     </li>
     <li>
-      <a href="#inspiration">Inspiration</a>
+      <a href="#inspiration">Inspiration</a></li>
       <li><a href="#tech-stack">Tech Stack</a></li>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
+      <li><a href="#getting started">Getting started</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#overview">Overview</a></li>
     <li><a href="#problem-solving">Problem Solving</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#learn-more">Learn More</a></li>
-  </ol>
+  </ul>
 </details>
 
 ## 🎞️Demo
 
-https://github.com/ritesh2004/HACKATHON_CSE2K23/assets/109234507/db0172ce-c1e0-4024-bd1f-8efc7b098d0a
+<video src="https://github.com/ritesh2004/HACKATHON_CSE2K23/assets/109234507/db0172ce-c1e0-4024-bd1f-8efc7b098d0a">
+</video>
 
 ## 🚀Inspiration
 
