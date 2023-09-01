@@ -21,11 +21,11 @@ function Page() {
                             </div>
                             <div class="flow-root">
                                 <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
-                                    {comments?.map((item)=>{
+                                    {comments?.map((item,index)=>{
                                         let time = new Date().toDateString(item?.created_at)
                                         {/* console.log(time) */}
                                         return(
-                                        <li class=" py-3 sm:py-4">
+                                        <li class=" py-3 sm:py-4" key={index}>
                                         <div class="flex items-center space-x-4">
                                             <div class="flex-1 min-w-0">
                                                 <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
