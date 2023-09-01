@@ -7,6 +7,7 @@ import LargeModal from '@/components/LargeModal'
 import { useRouter } from 'next/navigation';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Authcontext from '../context/Authcontext'
+import ChatIcon from '@mui/icons-material/Chat';
 // const Razorpay = require('razorpay');
 
 function Page() {
@@ -77,7 +78,10 @@ function Page() {
 
     return (
         <div>
-            <section class="text-gray-600 body-font">
+            <section class="text-gray-600 body-font relative">
+            <div onClick={()=>router.push('/comment')}>
+            <ChatIcon style={{width:'80px',height:'80px',padding:'15px',borderRadius:'50%'}} className='fixed bottom-5 right-5 bg-blue-400 color-white-700 cursor-pointer'/>
+            </div>
                 <div class="container px-5 py-24 mx-auto">
                     <div class="flex flex-wrap w-full mb-20">
                         <div class="lg:w-1/2 w-full mb-6 lg:mb-0">

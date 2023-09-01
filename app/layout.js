@@ -15,8 +15,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <AppcontextProvider>
     <Authprovider>
+    <AppcontextProvider>
       <body className={inter.className}>
       <Headers/>
       <div className='container mx-auto min-h-screen mt-5'>
@@ -24,8 +24,8 @@ export default function RootLayout({ children }) {
       </div>
       <Footer/>
       </body>
-      </Authprovider>
       </AppcontextProvider>
+      </Authprovider>
     </html>
   )
 }

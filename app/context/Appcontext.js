@@ -1,7 +1,8 @@
 "use client"
-import { createContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { createClient } from '@supabase/supabase-js';
 import { useRouter } from "next/navigation";
+import Authcontext from "./Authcontext";
 
 const supabaseUrl = 'https://frceuzxqwexmrbfvqjvm.supabase.co'
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZyY2V1enhxd2V4bXJiZnZxanZtIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTI2MjQ3MTQsImV4cCI6MjAwODIwMDcxNH0.a8388biNDvaNsES_tMKi38HDzWi8oHVf0oZsjuqgFwo"
@@ -11,6 +12,7 @@ const Appcontext = createContext();
 export default Appcontext;
 
 const AppcontextProvider = ({ children }) => {
+    let {userInfo} = useContext(Authcontext)
     const router = useRouter();
     const [formData, setFormData] = useState({});
     const [image, setImage] = useState();
@@ -20,6 +22,7 @@ const AppcontextProvider = ({ children }) => {
     const [applicants, setApplicants] = useState()
     const [row, setRow] = useState({})
     const [sent, setSent] = useState(false)
+    const [comments,setComments] = useState();
     // console.log(image)
     const time = new Date().getTime()
     // console.log(time)
@@ -60,6 +63,7 @@ const AppcontextProvider = ({ children }) => {
             if (!error) {
                 alert("Successfully submitted")
                 pushTo('/donation')
+                getRows()
             } else {
 
             }
@@ -193,6 +197,35 @@ const AppcontextProvider = ({ children }) => {
         }
     }
 
+    const postComments = async (e) =>{ 
+        e.preventDefault()
+        setLoading(true)
+        const { data, error } = await supabase
+        .from('user_comments')
+        .insert([
+            { user: userInfo?.email,comments:e.target.comment.value},
+        ])
+        .select()
+        setLoading(false)
+        getComments()
+    }
+
+    const getComments = async () =>{
+        let { data: user_comments, error } = await supabase
+        .from('user_comments')
+        .select('*')
+        if (!error) {
+            console.log(user_comments)
+            setComments(user_comments)
+        }else{
+            alert("Something went wrong!")
+        }
+    }
+
+    useEffect(()=>{
+        getComments()
+    },[])
+
 
 let values = {
     setFormData: setFormData,
@@ -208,7 +241,10 @@ let values = {
     postFeedback: postFeedback,
     sent: sent,
     editForm: editForm,
-    deleteRow:deleteRow
+    deleteRow:deleteRow,
+    postComments:postComments,
+    getComments:getComments,
+    comments:comments
 }
 return (
     <Appcontext.Provider value={values}>

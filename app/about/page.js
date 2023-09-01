@@ -6,7 +6,7 @@ function Page() {
             <section class="text-gray-600 body-font">
                 <div class="container px-5 py-20 mx-auto flex text-center flex-col">
                     <h1 class="sm:text-5xl text-2xl font-medium title-font mb-4 text-gray-900">Be The <span className='text-blue-700'>Change</span></h1>
-                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base mb-5">Mattis et aliquam fermentum sed sagittis eu elit mauris. Nisl eros vel neque vitae lorem molestie.</p>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base mb-5">The change we visualize everyday sholud be brought about by our work.</p>
                     <div class="flex flex-wrap -m-4">
                         <div class="p-4 lg:w-1/3">
                             <div class="h-full shadow-2xl px-8 pt-16 pb-24 rounded-2xl overflow-hidden text-center relative">
