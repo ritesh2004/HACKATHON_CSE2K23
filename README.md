@@ -102,9 +102,9 @@
   git clone https://github.com/ritesh2004/HACKATHON_CSE2K23.git
   ```
 2. Install node module packages
-   ```sh
-   npm install
-   ```
+  ```sh
+  npm install
+  ```
 3. Run the development server
   ```sh
   npm run dev

@@ -1,5 +1,5 @@
 "use client";
-import { createContext,useContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import jwtDecode from "jwt-decode";
 
 import { createClient } from '@supabase/supabase-js'
@@ -27,8 +27,8 @@ const Authprovider = ({children}) =>{
 
     const getUserInfo = ()=>{
         console.log('called')
-        const stored_token = localStorage.getItem('accessToken')
-        if (stored_token) {   
+        const stored_token = localStorage.getItem('accessToken') || null
+        if (stored_token !== 'undefined' && stored_token !== null) {   
             let decoded = jwtDecode(stored_token)
             setUserInfo(decoded)
         }
