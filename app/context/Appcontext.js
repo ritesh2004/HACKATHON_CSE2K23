@@ -65,7 +65,7 @@ const AppcontextProvider = ({ children }) => {
                 pushTo('/donation')
                 getRows()
             } else {
-
+                alert("Something went wrong! Please try again later...")
             }
 
         } else {
@@ -181,6 +181,7 @@ const AppcontextProvider = ({ children }) => {
         if (!error) {
             alert("Successfully Updated")
             pushTo('/donation')
+            getRows()
         } else {
             alert(error)
         }
@@ -194,6 +195,7 @@ const AppcontextProvider = ({ children }) => {
         .eq('id', id)
         if (!error) {
             alert("Item deleted")
+            getRows()
         }
     }
 

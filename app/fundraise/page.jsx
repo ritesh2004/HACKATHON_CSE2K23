@@ -1,6 +1,7 @@
 "use client"
 import Appcontext from '@/app/context/Appcontext';
 import React, { useContext, useState } from 'react';
+import Authcontext from '../context/Authcontext';
 // import Authcontext from '../context/Authcontext';
 // import { useRouter } from 'next/navigation';
 
@@ -13,11 +14,12 @@ function Page() {
     // if (!userInfo?.aud) {
     //     router.push('/signin')
     // }
+    let {userInfo} = useContext(Authcontext)
     let {setFormData,uploadForm,setImage,loading} = useContext(Appcontext);
     const [step, setStep] = useState(0);
     const [form,setForm] = useState({
         name:"",
-        email:"",
+        email:userInfo?.email,
         contact:"",
         address:"",
         age:"",
@@ -84,7 +86,7 @@ function Page() {
                     </div>
                     <div>
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-                        <input type="email" name="email" id="email" onChange={handleForm} value={form.email} placeholder="name@company.com" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
+                        <input type="email" name="email" id="email" onChange={handleForm} value={form.email} placeholder="name@company.com" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required disabled/>
                     </div>
                     <div>
                         <label for="contact" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your contact no</label>
