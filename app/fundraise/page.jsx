@@ -1,6 +1,6 @@
 "use client"
 import Appcontext from '@/app/context/Appcontext';
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Authcontext from '../context/Authcontext';
 // import Authcontext from '../context/Authcontext';
 // import { useRouter } from 'next/navigation';
@@ -30,6 +30,7 @@ function Page() {
         amount:"",
         upiid:""
     })
+
     const handleForm = (e) =>{
         const {name,value} = e.target;
         setForm((preVal)=>{

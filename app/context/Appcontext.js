@@ -4,8 +4,8 @@ import { createClient } from '@supabase/supabase-js';
 import { useRouter } from "next/navigation";
 import Authcontext from "./Authcontext";
 
-const supabaseUrl = 'https://frceuzxqwexmrbfvqjvm.supabase.co'
-const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZyY2V1enhxd2V4bXJiZnZxanZtIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTI2MjQ3MTQsImV4cCI6MjAwODIwMDcxNH0.a8388biNDvaNsES_tMKi38HDzWi8oHVf0oZsjuqgFwo"
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_KEY
 const supabase = createClient(supabaseUrl, supabaseKey)
 
 const Appcontext = createContext();
@@ -39,7 +39,7 @@ const AppcontextProvider = ({ children }) => {
         let info = data
         if (!error) {
             let { path } = info;
-            let image_url = `https://frceuzxqwexmrbfvqjvm.supabase.co/storage/v1/object/public/images/${path}`
+            let image_url = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/images/${path}`
             const { data, error } = await supabase
                 .from('raiser')
                 .insert([
@@ -65,11 +65,13 @@ const AppcontextProvider = ({ children }) => {
                 pushTo('/donation')
                 getRows()
             } else {
+                console.log(error)
                 alert("Something went wrong! Please try again later...")
             }
 
         } else {
             alert(error)
+            console.log(error)
         }
     }
 
